@@ -6,18 +6,25 @@
 /*   By: mwilk <mwilk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/09 17:27:48 by mwilk             #+#    #+#             */
-/*   Updated: 2016/11/08 16:27:43 by mwilk            ###   ########.fr       */
+/*   Updated: 2016/11/10 13:12:30 by mwilk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
-	size_t	i;
+	int	cmp;
+	int i;
 
-	if (s1 == NULL || s2 == NULL)
-		return (0);
 	i = 0;
-	while (s1[i] && s2[i] && s1[i] == s2[i])
-		i++;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	cmp = 0;
+	while (1)
+	{
+		cmp += (s1[i] - s2[i]);
+		if (!s1[i] && !s2[i])
+			return (cmp);
+		if (s1[i] == s2[i])
+			i++;
+		else
+			return (cmp);
+	}
 }

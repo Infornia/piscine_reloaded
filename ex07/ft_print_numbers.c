@@ -6,7 +6,7 @@
 /*   By: mwilk <mwilk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 11:17:41 by mwilk             #+#    #+#             */
-/*   Updated: 2016/11/08 11:17:49 by mwilk            ###   ########.fr       */
+/*   Updated: 2016/11/10 13:07:42 by mwilk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_print_numbers(void)
 {
 	char	digit;
 
-	digit = '1' - 1;
+	digit = '0' - 1;
 	while (++digit <= '9')
 		ft_putchar(digit);
 }

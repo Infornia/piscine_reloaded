@@ -6,7 +6,7 @@
 /*   By: mwilk <mwilk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 16:14:07 by mwilk             #+#    #+#             */
-/*   Updated: 2016/11/09 16:29:37 by mwilk            ###   ########.fr       */
+/*   Updated: 2016/11/10 12:51:55 by mwilk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int		*ft_range(int min, int max)
 {
 	int	*ret;
 	int	i;
-	
+
 	if (min >= max)
 		return (NULL);
 	ret = malloc(sizeof(int) * (max - min));

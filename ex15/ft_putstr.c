@@ -6,7 +6,7 @@
 /*   By: mwilk <mwilk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 16:18:29 by mwilk             #+#    #+#             */
-/*   Updated: 2016/11/08 16:20:50 by mwilk            ###   ########.fr       */
+/*   Updated: 2016/11/10 12:55:15 by mwilk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ void	ft_putchar(char c);
 void	ft_putstr(char *s)
 {
 	int i;
-	
+
 	i = -1;
 	while (s[++i])
 		ft_putchar(s[i]);

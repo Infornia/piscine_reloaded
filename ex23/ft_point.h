@@ -6,12 +6,16 @@
 /*   By: mwilk <mwilk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 16:33:36 by mwilk             #+#    #+#             */
-/*   Updated: 2016/11/09 16:34:54 by mwilk            ###   ########.fr       */
+/*   Updated: 2016/11/10 12:54:06 by mwilk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#ifndef FT_POINT_H
+# define FT_POINT_H
 
 typedef	struct	s_point
 {
 	int		x;
 	int		y;
 }				t_point;
+#endif
